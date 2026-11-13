@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EVENTIFY — Discover. Register. Experience. College event registration with intelligent FIFO seat queue allocation.">
+    <title>EVENTIFY — Discover. Register. Experience.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <div class="container navbar-inner">
+            <a href="index.html" class="navbar-brand">
+                <span class="brand-mark">E</span>
+                <span>EVENTIFY</span>
+            </a>
+
+            <ul class="navbar-nav">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="#how">How it Works</a></li>
+            </ul>
+
+            <div class="navbar-actions">
+                <a href="login.html" class="btn btn-ghost">Login</a>
+                <a href="register.html" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15 8.5 22 9.3 17 14 18.2 21 12 17.8 5.8 21 7 14 2 9.3 9 8.5 12 2"/></svg>
+                    Campus Events · Intelligent Queue Allocation
+                </div>
+
+                <h1>Discover. Register. Experience.</h1>
+                <p class="tagline">The modern way to manage college events with automatic FIFO waitlist and instant seat allocation.</p>
+
+                <div class="hero-actions">
+                    <a href="events.html" class="btn btn-primary btn-lg">
+                        Browse Events
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                    <a href="register.html" class="btn btn-secondary btn-lg">Get Started</a>
+                </div>
+
+                <form class="hero-search" onsubmit="return false;">
+                    <input type="text" id="homeSearch" placeholder="Search events, workshops, hackathons...">
+                    <button type="button" class="btn btn-primary">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                        Search
+                    </button>
+                </form>
+            </div>
+
+            <div class="hero-visual">
+                <div class="floating-card fc-1">
+                    <div class="fc-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    </div>
+                    <div class="fc-title">AI Innovation Summit</div>
+                    <div class="fc-sub">Mar 15 · Main Auditorium</div>
+                </div>
+
+                <div class="floating-card fc-2">
+                    <div class="fc-icon" style="background:#D1FAE5;color:#047857;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                    <div class="fc-title">Seat Allocated</div>
+                    <div class="fc-sub">Seat #12 confirmed</div>
+                </div>
+
+                <div class="floating-card fc-3">
+                    <div class="fc-icon" style="background:#FEF3C7;color:#B45309;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <div class="fc-title">FIFO Waitlist</div>
+                    <div class="fc-sub">You are #3 in queue</div>
+                </div>
+
+                <div class="floating-card fc-4">
+                    <div class="fc-icon" style="background:#EDE9FE;color:#6D28D9;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                    </div>
+                    <div class="fc-title">1,240+ Students</div>
+                    <div class="fc-sub">Across 6 events</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FEATURED EVENTS ================= -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <div class="eyebrow">Featured</div>
+                    <h2>Trending on EVENTIFY</h2>
+                    <p>Handpicked events happening soon on your campus.</p>
+                </div>
+                <a href="events.html" class="btn btn-secondary">View All →</a>
+            </div>
+
+            <div class="events-grid" id="featuredEvents">
+                <div class="loading-state" style="grid-column:1/-1;">
+                    <div class="spinner"></div>
+                    <p>Loading featured events...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CATEGORIES ================= -->
+    <section class="section" style="background:var(--light-blue);">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <div class="eyebrow">Browse</div>
+                    <h2>Explore by Category</h2>
+                    <p>Find exactly the kind of event you're looking for.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-4">
+                <div class="category-chip" data-category="AI & Technology">
+                    <div class="cat-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg>
+                    </div>
+                    AI & Technology
+                </div>
+                <div class="category-chip" data-category="Hackathons">
+                    <div class="cat-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    </div>
+                    Hackathons
+                </div>
+                <div class="category-chip" data-category="Workshops">
+                    <div class="cat-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                    </div>
+                    Workshops
+                </div>
+                <div class="category-chip" data-category="Career">
+                    <div class="cat-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                    </div>
+                    Career
+                </div>
+                <div class="category-chip" data-category="Cultural">
+                    <div class="cat-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                    </div>
+                    Cultural
+                </div>
+                <div class="category-chip" data-category="Sports">
+                    <div class="cat-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg>
+                    </div>
+                    Sports
+                </div>
+                <div class="category-chip" data-category="Seminars">
+                    <div class="cat-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/></svg>
+                    </div>
+                    Seminars
+                </div>
+                <div class="category-chip" data-category="Academic">
+                    <div class="cat-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg>
+                    </div>
+                    Academic
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= HOW IT WORKS ================= -->
+    <section class="section" id="how">
+        <div class="container">
+            <div class="section-header text-center" style="justify-content:center;flex-direction:column;text-align:center;">
+                <div class="eyebrow">Process</div>
+                <h2>How EVENTIFY Works</h2>
+                <p style="margin:0 auto;">Four simple steps from discovery to confirmed seat.</p>
+            </div>
+
+            <div class="grid grid-4">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Discover Events</h4>
+                    <p>Browse a curated catalogue of campus events with smart filters.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Register Instantly</h4>
+                    <p>One click — our C-powered WASM engine allocates a seat in real time.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Auto Waitlist</h4>
+                    <p>Event full? You're placed in a strict FIFO queue and promoted automatically.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h4>Attend & Enjoy</h4>
+                    <p>Show your seat number and experience the event without the hassle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= STATS ================= -->
+    <section class="section" style="background:var(--light-blue);">
+        <div class="container">
+            <div class="stats-row">
+                <div class="stat-card">
+                    <div class="stat-value" id="statEvents">0</div>
+                    <div class="stat-label">Total Events</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="statCapacity">0</div>
+                    <div class="stat-label">Total Seats</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="statRegistered">0</div>
+                    <div class="stat-label">Registrations</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="statCategories">0</div>
+                    <div class="stat-label">Categories</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="section">
+        <div class="container">
+            <div class="cta">
+                <h2>Ready to experience smarter events?</h2>
+                <p>Join EVENTIFY and let our intelligent queue system handle the rest.</p>
+                <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+                    <a href="register.html" class="btn btn-secondary btn-lg">Create Account</a>
+                    <a href="events.html" class="btn btn-primary btn-lg" style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);">Browse Events</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand"><span class="brand-mark">E</span> EVENTIFY</div>
+                    <p style="color:rgba(255,255,255,0.65);font-size:0.9rem;max-width:340px;">
+                        Discover. Register. Experience. Intelligent FIFO seat allocation powered by C / WebAssembly.
+                    </p>
+                </div>
+                <div>
+                    <h5>Product</h5>
+                    <ul>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="#how">How it works</a></li>
+                        <li><a href="register.html">Sign up</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Account</h5>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="user-dashboard.html">Dashboard</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>About</h5>
+                    <ul>
+                        <li><a href="#">Academic project</a></li>
+                        <li><a href="#">FIFO Queue</a></li>
+                        <li><a href="#">WebAssembly</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © <span data-year>2026</span> EVENTIFY — College Mini Project. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/notifications.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="../wasm_build/eventify_core.js"></script>
+    <script src="js/wasm-loader.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => Events.initHomePage());
+    </script>
+</body>
+</html>

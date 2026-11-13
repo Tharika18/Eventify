@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details — EVENTIFY</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container navbar-inner">
+            <a href="index.html" class="navbar-brand">
+                <span class="brand-mark">E</span>
+                <span>EVENTIFY</span>
+            </a>
+            <ul class="navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="user-dashboard.html">Dashboard</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <a href="user-dashboard.html" class="btn btn-ghost">Dashboard</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="section" style="padding-top:var(--space-8);">
+        <div class="container" id="eventDetail">
+            <div class="loading-state">
+                <div class="spinner"></div>
+                <p>Loading event...</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container"><div class="footer-bottom">© <span data-year>2026</span> EVENTIFY</div></div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/notifications.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="../wasm_build/eventify_core.js"></script>
+    <script src="js/wasm-loader.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => Events.initDetailPage());
+    </script>
+</body>
+</html>

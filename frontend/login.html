@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login — EVENTIFY</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <div class="auth-page">
+        <!-- Left visual panel -->
+        <aside class="auth-visual">
+            <div class="brand">
+                <span class="brand-mark">E</span>
+                <span>EVENTIFY</span>
+            </div>
+
+            <div class="auth-visual-content">
+                <h1>Welcome back to EVENTIFY.</h1>
+                <p>Sign in to manage your registrations, check queue positions, and never miss an event again.</p>
+
+                <div class="auth-feature">
+                    <span class="check">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    Real-time seat allocation
+                </div>
+                <div class="auth-feature">
+                    <span class="check">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    FIFO waitlist promotion
+                </div>
+                <div class="auth-feature">
+                    <span class="check">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    Powered by C / WebAssembly
+                </div>
+            </div>
+
+            <div class="auth-visual-footer">
+                © <span data-year>2026</span> EVENTIFY — College Mini Project
+            </div>
+        </aside>
+
+        <!-- Right form -->
+        <main class="auth-form-side">
+            <div class="auth-card">
+                <h2>Sign In</h2>
+                <p class="subtitle">Enter your credentials to continue.</p>
+
+                <form id="loginForm" novalidate>
+                    <div class="form-group">
+                        <label class="form-label" for="loginEmail">Email</label>
+                        <div class="input-icon-wrap">
+                            <span class="input-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </span>
+                            <input class="form-control" type="email" name="email" id="loginEmail" placeholder="you@college.edu" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="loginPassword">Password</label>
+                        <div class="input-icon-wrap">
+                            <span class="input-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                            </span>
+                            <input class="form-control" type="password" name="password" id="loginPassword" placeholder="••••••••" required>
+                            <button type="button" class="toggle-pass" aria-label="Show password">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            </button>
+                        </div>
+                        <div class="error-text"></div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block btn-lg">Sign In</button>
+
+                    <div class="auth-footer">
+                        New to EVENTIFY? <a href="register.html">Create an account</a>
+                    </div>
+
+                    
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/notifications.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="../wasm_build/eventify_core.js"></script>
+    <script src="js/wasm-loader.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => Auth.initLoginPage());
+    </script>
+</body>
+</html>

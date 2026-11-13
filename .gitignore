@@ -1,0 +1,20 @@
+# Environment and credentials
+.env
+.env.*
+!.env.example
+config.local.php
+backend/config/db.php
+
+# Database backups and local data
+database/*_backup.sql
+database/*.bak
+
+# Logs
+*.log
+backend/logs/*
+!backend/logs/.gitkeep
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
